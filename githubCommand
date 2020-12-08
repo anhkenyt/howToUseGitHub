@@ -1,0 +1,69 @@
+#prepare
+sudo apt-get install git
+git config --global user.name "user_name"
+git config --global user.email "vanducanh97@gmail.com"
+#to sync folder	
+mkdir Mytest
+git init Mytest
+touch readme
+git add .
+git commit -m "add readme"
+# create link contains folder in github.com : git@github.com:anhkenyt/Mytest.git
+git remote add origin git@github.com:anhkenyt/src_PNPNSFOAM.git
+enter id
+enter pass
+##To not enter again use ssh key
+ssh-keygen -t ed25519 -C "your_email@example.com"
+	Generating public/private ed25519 key pair.
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+sudo apt-get install xclip
+xclip -selection clipboard < ~/.ssh/id_ed25519.pub //copy content
+paste content to ssh in github.com/ssh
+OK
+#you dont need enter pass anymore
+// up to serve
+git push origin master
+// clone serve to local
+git pull origin master
+#
+Create branch
+git branch newBranch
+git checkout newBranch // copy from master to branch
+git push --set-upstream origin newBranch // up to server branch
+touch readme
+git add readme // add readme to just branch!
+git commit -m "add read me";
+git push // upto the server 
+Ke tu day, moi khi openterminal, moi sua doi doi thuc hien boi branch!
+gedit readme; // add sthelse
+git add readme;
+git push;
+No da duoc dong bo tren github
+sua tren web; 
+dong bo xuong 
+git pull;
+#In second computer
+sudo apt-get install git
+git config --global user.name "user_name"
+git config --global user.email "vanducanh97@gmail.com"
+git colone http::\\linkcuarepos
+	enter user 
+	enter pass // in this step we was cloned this folder from clonde
+ssh-keygen -t ed25519 -C "your_email@example.com"
+	Generating public/private ed25519 key pair.
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+sudo apt-get install xclip
+xclip -selection clipboard < ~/.ssh/id_ed25519.pub //copy content
+paste content to ssh in github.com/ssh
+git push
+git pull /*in normal way*/
+just change branch!
+*/
+/*
+git push origin master
+z! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:anhkenyt/testSync.git'
+--> git push -f origin master
+*/
